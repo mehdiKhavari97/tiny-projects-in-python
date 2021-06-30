@@ -1,3 +1,7 @@
+'''
+install these packages first :
+cv2
+'''
 import cv2
 
 img = cv2.imread('./pic.jpg')
