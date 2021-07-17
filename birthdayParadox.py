@@ -1,3 +1,9 @@
+"""
+1. Birthday Paradox Simulation, by Mehdi Khavari me.khavari.97@gmail.com
+2. Explore the surprising probabilities of the "Birthday Paradox".
+3. More info at https://en.wikipedia.org/wiki/Birthday_problem
+"""
+
 import datetime, random
 
 
