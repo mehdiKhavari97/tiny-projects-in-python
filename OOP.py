@@ -29,7 +29,9 @@ car2.config()
 
 
 class Student:
+    level = "University" #This is a class variable, if you change it, it will be changed for all the objects
     def __init__(self, fName = "John", lName = "Doe", age = 20):
+        #This are instance variables
         self.fName = fName
         self.lName = lName
         self.age = age
@@ -53,3 +55,32 @@ if s1.compareAge(s2):
     print("They have the same age.")
 else:
     print("They don't have the same age.")
+
+
+# making a class inside a class is possible
+
+class Employee:
+    def __init__(self, name = "John", age = 20, salary = 20000):
+        self.name = name
+        self.age = age
+        self.salary = salary
+        self.lpt = self.Laptop()
+
+    def show(self):
+        print(self.name, self.age, self.salary)
+        self.lpt.show()
+
+
+
+    class Laptop:
+        def __init__(self, brand = "ASUS", cpu = "i5", ram = 16):
+            self.brand = brand
+            self.cpu = cpu
+            self.ram = ram
+
+        def show(self):
+            print(self.brand, self.cpu, self.ram)
+
+
+e1 = Employee("Mehdi", 24, 12000)
+e1.show()
